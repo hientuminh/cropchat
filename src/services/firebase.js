@@ -10,7 +10,10 @@ var config = {
 }
 
 firebase.initializeApp(config)
+const storage = firebase.storage()
+const database = firebase.database()
 
-export default {
-  database: firebase.database()
+export {
+  storage,
+  database
 }
